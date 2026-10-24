@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="dark light">
 <title>홍윤기</title>
-<meta name="description" content="구조를 먼저 보는 백엔드 개발자 홍윤기의 포트폴리오">
+<meta name="description" content="백엔드 개발자 홍윤기의 포트폴리오">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
@@ -858,8 +858,8 @@ table.res tr.pick td:first-child{color:var(--accent-ink)}
     <div class="hero-text">
       <img class="avatar" src="img/profile.webp" alt="홍윤기 프로필 사진" width="104" height="104">
       <p class="eyebrow">backend · infra · junior</p>
-      <h1>기능보다 <em>구조</em>를 먼저 보는<br>백엔드 개발자, 홍윤기</h1>
-      <p class="lede">Spring Boot로 서비스를 만들고, 그 서비스가 AWS와 온프레미스 위에서 어떻게 돌아가는지까지 책임지고 싶습니다. 문제가 생기면 로그부터 끝까지 따라갑니다.</p>
+      <h1>백엔드 개발자, 홍윤기</h1>
+      <p class="lede">월말 집계와 실시간 API가 같은 DB 풀을 나눠 쓰다 데이터가 빠지던 문제를, Spring Batch로 집계를 분리해 해결했습니다. 유실 0건, 응답 2s → 200ms.</p>
       <div class="cta">
         <a class="btn primary" href="#projects">프로젝트 보기</a>
         <a class="btn" href="mailto:ricky0130@naver.com">
@@ -1368,11 +1368,6 @@ table.res tr.pick td:first-child{color:var(--accent-ink)}
                 <dt>결과</dt><dd>데이터 유실 0건, CPU 70.8% → 57.9%, 리포트 API 응답 약 2s → 200ms.</dd>
               </dl>
             </div>
-            <div class="metrics-row">
-              <div class="metric"><b>70.8%<small>→</small>57.9%</b><span>배치 분리 후 CPU 사용률</span></div>
-              <div class="metric"><b>0건</b><span>리포트 생성 시 데이터 유실</span></div>
-              <div class="metric"><b>2s<small>→</small>200ms</b><span>리포트 API 응답 시간</span></div>
-            </div>
             <figure class="fig"><img src="img/wd-perf-batch.webp" alt="Spring Batch 적용 전후 Grafana 대시보드 — 데이터 유실 제거, CPU 70.8%에서 57.9%" loading="lazy"><figcaption>Spring Batch 적용 후 — 데이터 유실 제거, CPU 70.8% → 57.9%</figcaption></figure>
 
             <div class="ts">
@@ -1418,6 +1413,15 @@ table.res tr.pick td:first-child{color:var(--accent-ink)}
             <div class="gallery wide">
               <figure class="fig"><img src="img/wd-admin.webp" alt="관리자 소비패턴 분석 Kibana 대시보드" loading="lazy"><figcaption>관리자 · 소비패턴 분석 (Kibana)</figcaption></figure>
               <figure class="fig"><img src="img/wd-members.webp" alt="관리자 회원 검색 화면" loading="lazy"><figcaption>관리자 · 회원 검색</figcaption></figure>
+            </div>
+          </section>
+
+          <section>
+            <h3>성과</h3>
+            <div class="metrics-row">
+              <div class="metric"><b>70.8%<small>→</small>57.9%</b><span>배치 분리 후 CPU 사용률</span></div>
+              <div class="metric"><b>0건</b><span>리포트 생성 시 데이터 유실</span></div>
+              <div class="metric"><b>2s<small>→</small>200ms</b><span>리포트 API 응답 시간</span></div>
             </div>
           </section>
 
@@ -1514,6 +1518,17 @@ table.res tr.pick td:first-child{color:var(--accent-ink)}
           </section>
 
           <section>
+            <h3>성과</h3>
+            <div class="metrics-row">
+              <div class="metric"><b>39.0<small>→</small>96.7</b><span>처리량 (req/s) · +148%</span></div>
+              <div class="metric"><b>0건</b><span>부하 테스트 중 실패 요청</span></div>
+            </div>
+            <ul class="pd-related">
+              <li><b>우리FIS 아카데미 기술세미나 우수상</b> — (주)우리에프아이에스 · 2025.12.12</li>
+            </ul>
+          </section>
+
+          <section>
             <h3>기술 스택</h3>
             <div class="stack">
               <div class="srow"><div class="lab">Frontend</div><div class="tags"><span class="tag"><svg class="ico" style="color:#61DAFB" aria-hidden="true"><use href="#i-react"/></svg>React</span><span class="tag"><svg class="ico" style="color:#F24E1E" aria-hidden="true"><use href="#i-figma"/></svg>Figma</span></div></div>
@@ -1585,7 +1600,7 @@ table.res tr.pick td:first-child{color:var(--accent-ink)}
           </section>
 
           <section>
-            <h3>결과</h3>
+            <h3>성과</h3>
             <ul class="pd-related">
               <li><b>교내 캡스톤 디자인 대상</b> — 안동대학교 · 2024.10.11 · 학과 최초 대상</li>
               <li><b>논문 2편</b> — 「장애인을 위한 채팅 시스템 설계」 KIIT 춘계학술대회 · 2024.05 / 「청각장애인을 위한 음성 감정 분석용 채팅 시스템」 KIIT 추계학술대회 · 2024.11</li>
@@ -1655,6 +1670,14 @@ table.res tr.pick td:first-child{color:var(--accent-ink)}
               <figure class="fig"><img src="img/ya-s3.webp" alt="캘린더 — 팀원 근무일정과 동아리 일정" loading="lazy"><figcaption>캘린더 — 근무일정 · 동아리 일정</figcaption></figure>
               <figure class="fig"><img src="img/ya-s4.webp" alt="출퇴근 현황 — 팀원의 출근 일정과 상태" loading="lazy"><figcaption>출퇴근 현황</figcaption></figure>
               <figure class="fig"><img src="img/ya-s5.webp" alt="드라이브 화면" loading="lazy"><figcaption>드라이브</figcaption></figure>
+            </div>
+          </section>
+
+          <section>
+            <h3>성과</h3>
+            <div class="metrics-row">
+              <div class="metric"><b>2시간<small>→</small>15분</b><span>지각비 정산 시간</span></div>
+              <div class="metric"><b>약 2년</b><span>실사용 운영 기간</span></div>
             </div>
           </section>
 
